@@ -1,0 +1,35 @@
+.about-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .user-icon {
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay-button {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px; /* Reduced padding */
+    background-color: #9F0D0D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap; /* Ensure text stays on a single line */
+    font-size: 18px; /* Reduced font size */
+  }
+  
+  .text-below-user {
+    width: 100%;
+    height: auto;
+    /* Removed margin-top */
+  }

@@ -1,0 +1,135 @@
+.navContainer {
+    width: 100%;
+    background-color: #000; /* Black background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative; /* Relative positioning for dropdown */
+    color: #fff; /* White text for contrast */
+    z-index: 1000; /* Navbar stays on top */
+    border: none;
+    transition: none; /* Prevent transition effects */
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+}
+
+.route-mapping {
+    border: none;
+    position: absolute;
+    top: 100%; /* Directly below the navbar with no gap */
+    right: 0; /* Align dropdown to the right */
+    background: rgba(0, 0, 0, 0.9); /* Black dropdown background */
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0; /* No padding for tight alignment */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    width: 200px;
+    transition: all 0.3s ease-in-out;
+    z-index: 999; /* Dropdown above other elements */
+}
+
+.route-mapping.show {
+    display: flex; /* Visible when toggled */
+}
+
+.hamburger {
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: none; /* Hidden initially */
+    color: #fff; /* White icon */
+    width: 40px; /* Fixed width */
+    height: 40px; /* Fixed height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none; /* No background color */
+    border: none; /* No border */
+    outline: none; /* No outline */
+}
+
+.hamburger:focus,
+.hamburger:active {
+    outline: none; /* Remove focus outline */
+    background: none; /* Remove background color */
+}
+
+.route-mapping ul {
+    list-style: none;
+}
+
+.route-mapping li {
+    padding: 10px; /* Uniform padding for clickable area */
+    cursor: pointer;
+    color: #fff; /* White text for dropdown items */
+    transition: background-color 0.3s ease-in-out; /* Smooth hover */
+    margin-left: 20px;
+}
+
+.route-mapping li:hover,
+.route-mapping li.active {
+    color: #9F0D0D; /* Active or hovered link color */
+}
+
+.logo {
+    width: 110px; /* Fixed width */
+    height: auto;
+    margin-left: 10px;
+    transition: none; /* Prevent transition effects */
+}
+
+.logo img {
+    width: 100%; /* Ensure the image fits the container */
+    height: auto;
+}
+
+.join-button {
+    background-color: #9F0D0D; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 5px 10px; /* Reduced padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Font size */
+    transition: background-color 0.3s ease-in-out; /* Smooth hover transition */
+}
+
+.join-button:hover {
+    background-color: #7D0A0A; /* Darker red on hover */
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show hamburger icon on small screens */
+        color: #fff;
+    }
+
+    .route-mapping {
+        position: absolute;
+        top: 100%; /* Aligns below navbar with no gap */
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.9); /* Black background */
+        width: 100%;
+        box-shadow: none; /* Removes shadow on mobile */
+    }
+}
+
+@media (min-width: 769px) {
+    .route-mapping {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background: none;
+        box-shadow: none;
+        width: auto;
+        gap: 20px;
+    }
+
+    .hamburger {
+        display: none; /* Hide hamburger icon on larger screens */
+    }
+}
