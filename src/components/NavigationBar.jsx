@@ -20,7 +20,7 @@ export function NavigationBar() {
           <ul>
             <li>
               <Link
-                to="about"
+                to="why"
                 smooth={true}
                 duration={500}
                 onClick={toggleMenu}
@@ -39,7 +39,7 @@ export function NavigationBar() {
               </Link>
             </li>
             <li>
-              <Link to="why" smooth={true} duration={500} onClick={toggleMenu}>
+              <Link to="why-mrk" smooth={true} duration={500} onClick={toggleMenu}>
                 Why Mr K
               </Link>
             </li>
