@@ -29,6 +29,7 @@
     font-size: 16px;
     outline: none;
     background: rgba(0, 0, 0, 0.3); /* Slightly transparent background */
+    color: #ccc;
 }
 
 .form-group input::placeholder,
