@@ -23,15 +23,17 @@ const WhyMrK = () => {
             <h1 style={{ fontSize: '30px', fontWeight: 'bold', lineHeight: '49.02px', letterSpacing: '0.02em', textUnderlinePosition: 'from-font', textDecorationSkipInk: 'none', whiteSpace: 'nowrap' }}>
                 Why choose Me?
             </h1>
-            <UserCard />
-            <UserCard />
-            <UserCard />
-            <UserCard />
-            <UserCard />
+            <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '10px' }}>
+                <UserCard />
+                <UserCard />
+                <UserCard />
+                <UserCard />
+                <UserCard />
+            </div>
             <div style={{ marginTop: '20px' }}>
-            <h2 style={{ fontSize: '30px', fontWeight: 'bold', lineHeight: '49.02px', letterSpacing: '0.02em', textUnderlinePosition: 'from-font', textDecorationSkipInk: 'none', whiteSpace: 'nowrap' }}>
-                Certifications
-            </h2>
+                <h2 style={{ fontSize: '30px', fontWeight: 'bold', lineHeight: '49.02px', letterSpacing: '0.02em', textUnderlinePosition: 'from-font', textDecorationSkipInk: 'none', whiteSpace: 'nowrap' }}>
+                    Certifications
+                </h2>
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <button onClick={handlePrev} style={{ marginRight: '10px', backgroundColor: 'transparent', border: 'none', color: 'white', cursor: 'pointer' }}>{'<'}</button>
                     <img src={certificates[currentIndex]} alt="Certificate" style={{ width: '200px', height: 'auto' }} />

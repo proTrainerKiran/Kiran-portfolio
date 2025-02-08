@@ -30,7 +30,7 @@ const Card = () => {
       <div className="card-footer">
         <Link to="enquiry">
           {" "}
-          <button className="join-now-btn">
+          <button className="join-button">
             Join Now <span>→</span>
           </button>
         </Link>

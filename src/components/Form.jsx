@@ -18,9 +18,9 @@ const Form = () => {
                 <div className="form-group">
                     <select id="plans" name="plans">
                         <option value="" disabled selected>Plans</option>
-                        <option value="basic">Basic</option>
-                        <option value="standard">Standard</option>
-                        <option value="premium">Premium</option>
+                        <option value="basic">1-on-1 Online - 5 days/1hr</option>
+                        <option value="standard">1-on-1 Online - 2 days/1hr</option>
+                        <option value="premium">45 days Diet Chart</option>
                     </select>
                 </div>
                 <div className="form-group">

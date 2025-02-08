@@ -19,7 +19,7 @@ const Card3 = () => {
         </ul>
       </div>
       <div className="card-footer">
-      <Link to="enquiry"> <button className="join-now-btn">
+      <Link to="enquiry"> <button className="join-button">
           Enquire Now <span>→</span>
         </button> </Link>
       </div>

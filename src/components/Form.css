@@ -4,6 +4,7 @@
     padding: 20px;
     border-radius: 10px;
     max-width: 500px;
+    height: 500px;
     margin: 0 auto;
 }
 
@@ -13,7 +14,7 @@
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 25px; /* Increased space between inputs */
     position: relative;
 }
 
@@ -27,7 +28,7 @@
     border-radius: 0;
     font-size: 16px;
     outline: none;
-    background: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    background: rgba(0, 0, 0, 0.3); /* Slightly transparent background */
 }
 
 .form-group input::placeholder,
@@ -38,11 +39,19 @@
 .form-group select {
     color: #ccc;
     appearance: none;
-    background: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    background: rgba(0, 0, 0, 0.3); /* Slightly transparent background */
     background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%23ccc" d="M2 0L0 2h4zM2 5L0 3h4z"/></svg>');
     background-repeat: no-repeat;
     background-position: right 10px center;
     background-size: 8px 10px;
+    font-size: 18px; /* Increased input size */
+}
+
+.form-group select option {
+    color: black; /* Text color */
+    background: white; /* Background color */
+    font-size: 16px; /* Font size */
+    padding: 10px; /* Padding */
 }
 
 button[type="submit"] {
@@ -52,7 +61,7 @@ button[type="submit"] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 button[type="submit"]:hover {
