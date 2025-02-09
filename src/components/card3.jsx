@@ -5,16 +5,16 @@ const Card3 = () => {
   return (
     <div className="card">
       <div className="card-header">
-        <h2>Diet Planning and Guidance</h2>
+        <h2>Diet plan and training schedule</h2>
         
       </div>
       <hr className="separator-line" />
       <div className="card-body">
-        <p>45 days Diet Char</p>
+        <p>45 days Diet Chart</p>
         <ul className="features-list">
           <li>✅ Personalized Meals plan</li>
           <li>✅ Balanced Nutrition</li>
-          <li>✅ Weight Management</li>
+          <li>✅ personalised training schedule</li>
           <li>✅ Portion Control Guidance</li>
         </ul>
       </div>
